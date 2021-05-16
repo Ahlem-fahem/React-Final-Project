@@ -2,7 +2,7 @@
 
 ****
 
-## C'est notre projet final de matière DevOps :
+## C'est notre projet final de matière Programmation fonctionnelle :
 #### Ahlem Fahem
 #### Lamya Rayess
 
