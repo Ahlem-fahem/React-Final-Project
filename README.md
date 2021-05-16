@@ -3,8 +3,10 @@
 ****
 
 ## C'est notre projet final de matière Programmation fonctionnelle :
-#### Ahlem Fahem
-#### Lamya Rayess
+###### Réalisé par 
+- [Lamya Rayess](https://github.com/lamya-rey)
+- [Ahlem Fahem](https://github.com/Ahlem-fahem) 
+
 
 ****
 
