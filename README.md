@@ -7,7 +7,7 @@
 
 ## C'est quoi le projet :
 
-Notre projet s'agit d'une bibliothèque en ligne, ou l'utilisateur peut empreinter un livre en ligne.
+Notre projet s'agit d'une bibliothèque en ligne, ou l'utilisateur peut créer un compte pour devenir un membre et comme des fonctionnalités il peut ajouter, empreinter des livre en ligne.
 Cet utilisateur peut-être un enfant, un adolescent ou un adule ( 3 Cathégories ).
 
 #### Concept :
