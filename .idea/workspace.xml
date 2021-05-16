@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a96003d-3411-460d-9aac-4d560893bdfe" name="Default Changelist" comment="">
+    <list default="true" id="7a96003d-3411-460d-9aac-4d560893bdfe" name="Default Changelist" comment=":art: add book list and loading components">
       <change afterPath="$PROJECT_DIR$/src/components/BookItem.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/ListOfBooks.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Loading.tsx" afterDir="false" />
@@ -113,6 +113,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":art: add book list and loading components" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: add book list and loading components" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="188" key="#Notifications" timestamp="1621166656832">
