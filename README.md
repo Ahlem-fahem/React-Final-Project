@@ -56,7 +56,3 @@ En principe aprés lancer la commande le project s'ouvre automatiquement dans le
 * Routing
 * Si je clique sur Actualiser, je rester sur la même page
 * Loading states
-
-
-
-📝 Update README.md
