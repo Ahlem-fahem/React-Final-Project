@@ -39,16 +39,20 @@ En principe aprés lancer la commande le project s'ouvre automatiquement dans le
 
 #### Les Interfaces Utilisateur réalisées :
 
-* Page Inscription : http://localhost:3000
+* Page Inscription : http://localhost:3000 
 * Page Authentification : http://localhost:3000/login
-* Page d'accueil : http://localhost:3000/home
-* Page ajouter un livre : http://localhost:3000/add
-* Page livre : http://localhost:3000/book
-
+* Page d'accueil : http://localhost:3000/home : contient la liste des livres et à partir de la quel on peut accèder à la page livre et la page ajouter livre.
+* Page ajouter un livre : http://localhost:3000/add : là on peut ajouter un livre en remplissant le forum et puis cliquer sur la bouton "Add book"
+* Page livre : http://localhost:3000/book : à partir de la quel on peut emprunter le livre concerné et faire une commentaire pour donner son avis si besoin.
+* Page 404
 ****
 
-#### 
-
+#### Travail Réalisé:
+* le design de différentes pages
+* Page 404 
+* Typescript
+* Routing
+* Si je clique sur Actualiser, je rester sur la même page
 
 
 
