@@ -18,12 +18,14 @@ Cet utilisateur peut-être un enfant, un adolescent ou un adule ( 3 Cathégories
 
 #### Fonctionnement du projet:
 
-Run:
+Dans le terminal de projet run:
 
-Yarn start
+$ yarn start
+
+après sur le navigateur accéder au :
 
 URL: http://localhost:3000
 
-aprés lancer cette commande le project s'ouvre automatiquement dans le navigateur 
+En principe aprés lancer la commande le project s'ouvre automatiquement dans le navigateur 
 
 📝 Update README.md
