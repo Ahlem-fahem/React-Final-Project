@@ -1,4 +1,8 @@
 import {Link} from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+import Loading from "./Loading";
+
 type Inputs = {
     userName: string;
     name: string;
@@ -8,14 +12,24 @@ type Inputs = {
 
 };
 function Register() {
-    /*const { register, handleSubmit } = useForm<Inputs>({
+    const [showLoading, setShowLoading] = useState(false)
+
+    const { register, handleSubmit } = useForm<Inputs>({
         defaultValues: {
-            firstName: "bill",
-            lastName: "luo",
-            email: "test@test.com",
-            isDeveloper: true
+            userName: "",
+            name: "",
+            age : 23,
+            email: "",
+            password: ""
         }
-    });*/
+    });
+    const onSubmit = (data: Inputs) => {
+        setShowLoading(true)
+        setTimeout(() => {
+            setShowLoading(false)
+            alert(JSON.stringify(data));
+        },3000)
+      };
   return (
 <div className="bg-gray-200">
     <header className="flex items-center bg-pink-200 h-20 lg:h-40 shadow-2xl">
@@ -23,6 +37,7 @@ function Register() {
     </header>
 
     <main>
+
         <div
             className="flex flex-col justify-center items-center mx-auto w-full md:w-2/3 px-4 py-8 bg-white shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
             <div
@@ -36,44 +51,46 @@ function Register() {
                 </Link>
             </span>
             <div className="p-6 mt-8">
-                <form action="#">
+                <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="flex flex-col mb-2">
                         <div className=" relative ">
-                            <input type="text" id="create-account-pseudo"
+                            <input type="text" id="create-account-pseudo" {...register("userName")}
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                                    name="userName" placeholder="Pseudo"/>
                         </div>
                     </div>
                     <div className="flex gap-4 mb-2">
                         <div className=" relative ">
-                            <input type="text" id="name"
+                            <input type="text" id="name" {...register("name")}
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                                    name="name" placeholder="Name"/>
                         </div>
                         <div className=" relative ">
-                            <input type="text" id="age"
+                            <input type="text" id="age" {...register("age")}
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                                    name="age" placeholder="Age"/>
                         </div>
                     </div>
                     <div className="flex flex-col mb-2">
                         <div className=" relative ">
-                            <input type="text" id="create-account-email"
+                            <input type="text" id="create-account-email" {...register("email")}
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                                    placeholder="Email"/>
                         </div>
                         <div className=" relative ">
-                            <input type="password" id="login-account-password"
+                            <input type="password" id="login-account-password" {...register("password")}
                                    className="mt-2 rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
                                    placeholder="Password"/>
                         </div>
                     </div>
+                    { showLoading ? <Loading /> : null }
+
                     <div className="flex w-full my-4">
-                     {/*   <button type="submit"
+                      <button type="submit"
                                 className="py-2 px-4  bg-pink-200 hover:bg-pink-700 border border-pink-700 hover:text-white focus:ring-pink-500 focus:ring-offset-pink-200 text-pink-900 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                             Register
-                        </button>*/}
-                        <Link to="/home">Register</Link>
+                        </button>
+                        
                     </div>
                 </form>
             </div>
