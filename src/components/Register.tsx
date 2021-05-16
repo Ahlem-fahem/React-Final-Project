@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Loading from "./Loading";
@@ -13,6 +13,7 @@ type Inputs = {
 };
 function Register() {
     const [showLoading, setShowLoading] = useState(false)
+    let history = useHistory()
 
     const { register, handleSubmit } = useForm<Inputs>({
         defaultValues: {
@@ -28,6 +29,7 @@ function Register() {
         setTimeout(() => {
             setShowLoading(false)
             alert(JSON.stringify(data));
+            history.push('/home')
         },3000)
       };
   return (
