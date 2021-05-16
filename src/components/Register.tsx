@@ -1,6 +1,21 @@
 import {Link} from "react-router-dom";
+type Inputs = {
+    userName: string;
+    name: string;
+    age:number;
+    email: string;
+    password: string;
 
+};
 function Register() {
+    /*const { register, handleSubmit } = useForm<Inputs>({
+        defaultValues: {
+            firstName: "bill",
+            lastName: "luo",
+            email: "test@test.com",
+            isDeveloper: true
+        }
+    });*/
   return (
 <div className="bg-gray-200">
     <header className="flex items-center bg-pink-200 h-20 lg:h-40 shadow-2xl">
@@ -26,19 +41,19 @@ function Register() {
                         <div className=" relative ">
                             <input type="text" id="create-account-pseudo"
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
-                                   name="pseudo" placeholder="Pseudo"/>
+                                   name="userName" placeholder="Pseudo"/>
                         </div>
                     </div>
                     <div className="flex gap-4 mb-2">
                         <div className=" relative ">
-                            <input type="text" id="create-account-first-name"
+                            <input type="text" id="name"
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
-                                   name="First name" placeholder="First name"/>
+                                   name="name" placeholder="Name"/>
                         </div>
                         <div className=" relative ">
-                            <input type="text" id="create-account-last-name"
+                            <input type="text" id="age"
                                    className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"
-                                   name="Last name" placeholder="Last name"/>
+                                   name="age" placeholder="Age"/>
                         </div>
                     </div>
                     <div className="flex flex-col mb-2">
@@ -54,10 +69,11 @@ function Register() {
                         </div>
                     </div>
                     <div className="flex w-full my-4">
-                        <button type="submit"
+                     {/*   <button type="submit"
                                 className="py-2 px-4  bg-pink-200 hover:bg-pink-700 border border-pink-700 hover:text-white focus:ring-pink-500 focus:ring-offset-pink-200 text-pink-900 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                             Register
-                        </button>
+                        </button>*/}
+                        <Link to="/home">Register</Link>
                     </div>
                 </form>
             </div>
