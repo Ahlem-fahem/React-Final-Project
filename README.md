@@ -56,3 +56,5 @@ En principe aprés lancer la commande le project s'ouvre automatiquement dans le
 * Routing
 * Si je clique sur Actualiser, je rester sur la même page
 * Loading states
+* Hook avec Book list et register
+* Quand je valide l'inscription un popup s'affiche qui contient les données de l'utilisateur quand je clique sur ok page d'accueil s'affiche.
