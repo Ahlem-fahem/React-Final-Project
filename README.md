@@ -16,6 +16,14 @@ Cet utilisateur peut-être un enfant, un adolescent ou un adule ( 3 Cathégories
 * Un enfant ne peut pas emprunter un livre "ado" ou "adulte"
 * Un ado ne peut pas enprunter un livre "adulte"
 
+#### Fonctionnement du projet:
 
+Run:
+
+Yarn start
+
+URL: http://localhost:3000
+
+aprés lancer cette commande le project s'ouvre automatiquement dans le navigateur 
 
 📝 Update README.md
