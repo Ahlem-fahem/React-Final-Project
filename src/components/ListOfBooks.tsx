@@ -47,7 +47,7 @@ function ListOfBooks() {
                 <h2 className="w-full text-lg text-pink-900 lg:text-4xl font-black flex justify-center lg:font-extrabold"> Here we go </h2>
                 <h3 className="w-full text-lg text-gray-900 lg:text-2xl font-black flex justify-center lg:font-extrabold"> let's read and share books together ! </h3>
                 <div className="flex space-x-10 justify-center pt-5 lg:pt-0">
-                    <a href="#" className="bg-gray-500 rounded-full py-2 px-5 font-bold text-white"> Add a book </a>
+                    <a href="/add" className="bg-gray-500 rounded-full py-2 px-5 font-bold text-white"> Add a book </a>
                 </div>
             </header>
 

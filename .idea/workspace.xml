@@ -10,13 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a96003d-3411-460d-9aac-4d560893bdfe" name="Default Changelist" comment=":art: add book list and loading components">
-      <change afterPath="$PROJECT_DIR$/src/components/BookItemStatic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Book.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RoutesConf.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RoutesConf.tsx" afterDir="false" />
+    <list default="true" id="7a96003d-3411-460d-9aac-4d560893bdfe" name="Default Changelist" comment=":Hammer: Fix some details">
+      <change beforePath="$PROJECT_DIR$/src/components/ListOfBooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListOfBooks.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +87,16 @@
       <updated>1621102715426</updated>
       <workItem from="1621102716925" duration="11673000" />
       <workItem from="1621153326960" duration="8742000" />
-      <workItem from="1621243164824" duration="1298000" />
+      <workItem from="1621243164824" duration="1592000" />
     </task>
+    <task id="LOCAL-00001" summary=":Hammer: Fix some details">
+      <created>1621244514413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621244514413</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":art: add book list and loading components" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: add book list and loading components" />
+    <MESSAGE value=":Hammer: Fix some details" />
+    <option name="LAST_COMMIT_MESSAGE" value=":Hammer: Fix some details" />
   </component>
 </project>
