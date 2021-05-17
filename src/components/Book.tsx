@@ -4,7 +4,7 @@ import {RouteComponentProps} from "react-router-dom";
 interface TParams {
     id: string;
 }
-function Book({match}: RouteComponentProps<TParams>) {
+function Book() {
     return (
         <div className="h-auto">
             <header className="flex items-center pt-5 lg:pt-10 flex-col lg:space-y-5 bg-pink-200 h-20 lg:h-36 shadow-2xl">

@@ -9,6 +9,7 @@ import App from "./App";
 import Register from "./Register";
 
 
+
 function RoutesConf() {
     return (
         <Router>
@@ -25,15 +26,12 @@ function RoutesConf() {
                 <Route exact path="/add">
                     <Addbook/>
                 </Route>
-                <Route
-                    path="/books/:id"
-                    render={(props) =>
-                        <React.Fragment>
-                            <Book {...props} />
-                        </React.Fragment>
-                    }
-                />
-                <Route exact path="/add">
+
+                <Route exact path="/book">
+                    <Book />
+                </Route>
+
+                <Route exact path="">
                     <NotFoundPage/>
                 </Route>
             </Switch>
